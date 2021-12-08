@@ -22,9 +22,10 @@ markets without complete vertical integration or monopolization.&lt;span style=&
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-I highly recommend &amp;quot;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gwern.net&#x2F;Complement&quot;&gt;Laws of Tech: Commoditize Your Complement&lt;&#x2F;a&gt;&amp;quot; for a more
+I highly recommend &amp;quot;[Laws of Tech: Commoditize Your Complement][cyc]&amp;quot; for a more
 in-depth look into this idea.
 &lt;&#x2F;span&gt;
+
 Very briefly, the idea is this: every product has a &lt;em&gt;substitute&lt;&#x2F;em&gt; and a &lt;em&gt;complement&lt;&#x2F;em&gt;.
 A substitute is a product that provides the same functionality and therefore
 competes with your product.
@@ -54,9 +55,10 @@ automatically synthesize them from specifications.&lt;span style=&quot;white-spa
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-James Bornholt&#x27;s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.sigplan.org&#x2F;2019&#x2F;07&#x2F;31&#x2F;program-synthesis-in-2019&#x2F;&quot;&gt;introduction to program synthesis&lt;&#x2F;a&gt; provides a good overview of
+James Bornholt&amp;#x27;s [introduction to program synthesis][synth] provides a good overview of
 the area.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;p&gt;Roughly speaking, anyone who attempts to build a solver-aided tool has to do
 three things: encode the semantics of programs as SMT, repeatedly query
 the SMT solver, and transform the output of the SMT solver back to the input
@@ -79,9 +81,10 @@ tool.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
-I recommend reading the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;%7Eemina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; for those
+I recommend reading the [Rosette paper][rose-paper] for those
 interested.
 &lt;&#x2F;span&gt;
+
 The original &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;%7Eemina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; was a novel and interesting contribution,
 therefore justifying its publication.
 However, the real research impact of Rosette has been from its continued use
@@ -124,7 +127,8 @@ the research paper.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 The research contributions of the paper are not tied to Rosette.
 However, building upon Rosette makes the paper that much more compelling.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;finding-a-complement&quot;&gt;Finding a Complement&lt;&#x2F;h2&gt;
 &lt;p&gt;Rosette was not the first tool to address the needs of a particular research
 community.
@@ -332,7 +336,8 @@ run it on an FPGA.&lt;span style=&quot;white-space:nowrap&quot;&gt;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 I apologize to my architect friends. Running designs on an FPGA in reality can be an incredible challenge. FPGAs have different kinds of memory and performance characteristics. Most hardware design codebases are carefully engineered to separate FPGA-specific design decisions from the core design.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;p&gt;Unfortunately, when trying to run high-level application code
 the level of abstraction afforded by HDLs is far too low-level.
 Imagine
@@ -367,8 +372,9 @@ in the community.&lt;&#x2F;p&gt;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-&amp;quot;Synthesis&amp;quot; is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
+&amp;quot;Synthesis&amp;quot; is borrowed from hardware design workflows---circuits are synthesized into silicon. This is just a compiler.
 &lt;&#x2F;span&gt;
+
 is the idea of compiling a computational description
 in a high-level programming language, &lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;label for=&quot;sn-3&quot;
@@ -382,6 +388,7 @@ in a high-level programming language, &lt;span style=&quot;white-space:nowrap&qu
 Architects operate at the level of gates, wires, and clocks. C++ is a huge
 jump in abstractions.
 &lt;&#x2F;span&gt;
+
 like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains—everything
 from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;1466178&quot;&gt;digital signal processing&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3020078.3021741&quot;&gt;machine learning
@@ -926,6 +933,7 @@ fascinated with Scheme.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Yes, I am a walking PL cliché.
 &lt;&#x2F;span&gt;
+
 After some back and forth, I quickly started
 a project. The project was to build a formal semantics for bash scripts. The
 bash specification is large and complicated with a lot of subtle interactions.
@@ -943,8 +951,9 @@ project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Michael Greenberg, one of our collaborators, continued working on this and has
-come up with some &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;shell.cs.pomona.edu&#x2F;&quot;&gt;nice results&lt;&#x2F;a&gt;.
+come up with some [nice results](http:&amp;#x2F;&amp;#x2F;shell.cs.pomona.edu&amp;#x2F;).
 &lt;&#x2F;span&gt;
+
 A few weeks into research and I had already failed a project.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;summer-2016&quot;&gt;Summer 2016&lt;&#x2F;h3&gt;
 &lt;p&gt;I came back for the summer and started working on a new, and slightly related
@@ -982,8 +991,9 @@ Fission. Eventually, I stopped working on Puppet synthesis entirely.&lt;span sty
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-This eventually became a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aaronweiss.us&#x2F;pubs&#x2F;ase17.pdf&quot;&gt;paper&lt;&#x2F;a&gt;.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+This eventually became a [paper](https:&amp;#x2F;&amp;#x2F;aaronweiss.us&amp;#x2F;pubs&amp;#x2F;ase17.pdf).
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;p&gt;To cap off the depressing string of half completed projects, it was around this
 time I actually had minor clinical depression and my productivity collapsed. After
 attending &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;conf.researchr.org&#x2F;home&#x2F;icfp-2016&quot;&gt;ICFP ’16&lt;&#x2F;a&gt; I decided to
@@ -1000,7 +1010,8 @@ Researchers are people who sometimes work extraordinarily hard at the expense
 of their own health.
 It is important to realize that your work is significantly
 less important that your health.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;p&gt;Meanwhile, we also published a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;drops.dagstuhl.de&#x2F;opus&#x2F;volltexte&#x2F;2017&#x2F;7124&#x2F;pdf&#x2F;LIPIcs-SNAPL-2017-5.pdf&quot;&gt;workshop
 paper&lt;&#x2F;a&gt;
 on Fission. Unfortunately, after several rewrites of the compiler, people
@@ -1116,7 +1127,8 @@ two semesters.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 The CS department recently overhauled the course requirement to reduce the
 number of classes and restrictions on which classes to take.
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;my-experience&quot;&gt;My Experience&lt;&#x2F;h3&gt;
 &lt;p&gt;The free agent system caused me a lot of angst during the decision process. For
 some background, I had started doing programming languages (PL) research in the
@@ -1156,9 +1168,10 @@ just as excited about it as me.&lt;span style=&quot;white-space:nowrap&quot;&gt;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Importantly, this includes other grad students.
-Remember, you&#x27;re going to be spending a lot more time with other grad
-students than you will with faculty.
-&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+  Remember, you&amp;#x27;re going to be spending a lot more time with other grad
+  students than you will with faculty.
+&lt;&#x2F;span&gt;
+&lt;&#x2F;li&gt;
 &lt;li&gt;The first year TAing requirement causes some amount of stress for
 new students. However, the department is aware of the issues and is
 trying to move away from this system.&lt;&#x2F;li&gt;
@@ -1203,9 +1216,10 @@ of building better and improved tools for the domain.&lt;span style=&quot;white-
 &lt;span class=&quot;sidenote&quot;&gt;
 It is rarely the case that the tool or language proposed actually solves the
 problems in the motivation.
-&lt;em&gt;Yes, do tell me how your tiny language will stop Google from going down twice
-a year.&lt;&#x2F;em&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+*Yes, do tell me how your tiny language will stop Google from going down twice
+a year.*
+&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
 &lt;p&gt;While I strongly endorse PL techniques and research being applied in new
 domains, this story demonstrates a fundamental issue for me: Application of PL techniques is
 done retrospectively. PL researchers are not there when a domain is shaping up
