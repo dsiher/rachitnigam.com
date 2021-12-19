@@ -22,7 +22,7 @@ markets without complete vertical integration or monopolization.&lt;span style=&
        id=&quot;sn-1&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-I highly recommend &amp;quot;[Laws of Tech: Commoditize Your Complement][cyc]&amp;quot; for a more
+I highly recommend “&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gwern.net&#x2F;Complement&quot;&gt;Laws of Tech: Commoditize Your Complement&lt;&#x2F;a&gt;” for a more
 in-depth look into this idea.
 &lt;&#x2F;span&gt;
 
@@ -55,7 +55,7 @@ automatically synthesize them from specifications.&lt;span style=&quot;white-spa
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-James Bornholt&amp;#x27;s [introduction to program synthesis][synth] provides a good overview of
+James Bornholt’s &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.sigplan.org&#x2F;2019&#x2F;07&#x2F;31&#x2F;program-synthesis-in-2019&#x2F;&quot;&gt;introduction to program synthesis&lt;&#x2F;a&gt; provides a good overview of
 the area.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
@@ -81,7 +81,7 @@ tool.&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 This simple idea is, of course, built upon deep insights about how solvers
 and symbolic execution work.
-I recommend reading the [Rosette paper][rose-paper] for those
+I recommend reading the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;homes.cs.washington.edu&#x2F;%7Eemina&#x2F;doc&#x2F;rosette.pldi14.pdf&quot;&gt;Rosette paper&lt;&#x2F;a&gt; for those
 interested.
 &lt;&#x2F;span&gt;
 
@@ -372,7 +372,7 @@ in the community.&lt;&#x2F;p&gt;
        id=&quot;sn-2&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-&amp;quot;Synthesis&amp;quot; is borrowed from hardware design workflows---circuits are synthesized into silicon. This is just a compiler.
+“Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
 &lt;&#x2F;span&gt;
 
 is the idea of compiling a computational description
@@ -951,7 +951,7 @@ project.&lt;span style=&quot;white-space:nowrap&quot;&gt;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Michael Greenberg, one of our collaborators, continued working on this and has
-come up with some [nice results](http:&amp;#x2F;&amp;#x2F;shell.cs.pomona.edu&amp;#x2F;).
+come up with some &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;shell.cs.pomona.edu&#x2F;&quot;&gt;nice results&lt;&#x2F;a&gt;.
 &lt;&#x2F;span&gt;
 
 A few weeks into research and I had already failed a project.&lt;&#x2F;p&gt;
@@ -991,7 +991,7 @@ Fission. Eventually, I stopped working on Puppet synthesis entirely.&lt;span sty
        id=&quot;sn-3&quot;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
-This eventually became a [paper](https:&amp;#x2F;&amp;#x2F;aaronweiss.us&amp;#x2F;pubs&amp;#x2F;ase17.pdf).
+This eventually became a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aaronweiss.us&#x2F;pubs&#x2F;ase17.pdf&quot;&gt;paper&lt;&#x2F;a&gt;.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
 &lt;p&gt;To cap off the depressing string of half completed projects, it was around this
@@ -1168,8 +1168,8 @@ just as excited about it as me.&lt;span style=&quot;white-space:nowrap&quot;&gt;
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Importantly, this includes other grad students.
-  Remember, you&amp;#x27;re going to be spending a lot more time with other grad
-  students than you will with faculty.
+Remember, you’re going to be spending a lot more time with other grad
+students than you will with faculty.
 &lt;&#x2F;span&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;The first year TAing requirement causes some amount of stress for
@@ -1216,8 +1216,8 @@ of building better and improved tools for the domain.&lt;span style=&quot;white-
 &lt;span class=&quot;sidenote&quot;&gt;
 It is rarely the case that the tool or language proposed actually solves the
 problems in the motivation.
-*Yes, do tell me how your tiny language will stop Google from going down twice
-a year.*
+&lt;em&gt;Yes, do tell me how your tiny language will stop Google from going down twice
+a year.&lt;&#x2F;em&gt;
 &lt;&#x2F;span&gt;
 &lt;&#x2F;p&gt;
 &lt;p&gt;While I strongly endorse PL techniques and research being applied in new
