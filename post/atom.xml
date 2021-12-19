@@ -234,7 +234,7 @@ ensure that well-typed programs go fast.&lt;&#x2F;li&gt;
 		<link href="https://rachitnigam.com/post/reconf-future/" type="text/html"/>
 		<id>https://rachitnigam.com/post/reconf-future/</id>
 		<content type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;A TLDR on why you should care.&lt;&#x2F;strong&gt; FPGAs, a form of reconfigurable
+&lt;p&gt;FPGAs, a form of reconfigurable
 architectures, already power a large number of datacenter applications. With
 FPGA acceleration becoming mainstream, it is the perfect opportunity to think
 about programming models for designing next-generation high-performance
@@ -363,7 +363,7 @@ of transforming behavioral (or functional) descriptions of computation
 into hardware designs. This is commonly referred to High-Level Synthesis (HLS)
 in the community.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;high-level-synthesis&quot;&gt;High-Level Synthesis&lt;&#x2F;h2&gt;
-&lt;p&gt;High-Level Synthesis &lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;p&gt;High-Level Synthesis&lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;label for=&quot;sn-2&quot;
        class=&quot;margin-toggle sidenote-number&quot;&gt;
 &lt;&#x2F;label&gt;
@@ -374,8 +374,7 @@ in the community.&lt;&#x2F;p&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 “Synthesis” is borrowed from hardware design workflows—circuits are synthesized into silicon. This is just a compiler.
 &lt;&#x2F;span&gt;
-
-is the idea of compiling a computational description
+ is the idea of compiling a computational description
 in a high-level programming language, &lt;span style=&quot;white-space:nowrap&quot;&gt;
 &lt;label for=&quot;sn-3&quot;
        class=&quot;margin-toggle sidenote-number&quot;&gt;
@@ -388,8 +387,7 @@ in a high-level programming language, &lt;span style=&quot;white-space:nowrap&qu
 Architects operate at the level of gates, wires, and clocks. C++ is a huge
 jump in abstractions.
 &lt;&#x2F;span&gt;
-
-like C or C++, into an HDL like
+ like C or C++, into an HDL like
 Verilog. HLS has been quite successful in a multitude of domains—everything
 from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ieeexplore.ieee.org&#x2F;document&#x2F;1466178&quot;&gt;digital signal processing&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dl.acm.org&#x2F;doi&#x2F;10.1145&#x2F;3020078.3021741&quot;&gt;machine learning
 accelerators&lt;&#x2F;a&gt; has been implemented in HLS.&lt;&#x2F;p&gt;
