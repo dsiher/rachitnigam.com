@@ -4,8 +4,71 @@
 	<link href="https://rachitnigam.com/post/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://rachitnigam.com/post/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-01-09T00:00:00+00:00</updated>
+	<updated>2022-01-11T00:00:00+00:00</updated>
 	<id>https://rachitnigam.com/post/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Dear Sir, You Have Built a Compiler</title>
+		<published>2022-01-11T00:00:00+00:00</published>
+		<updated>2022-01-11T00:00:00+00:00</updated>
+		<link href="https://rachitnigam.com/post/you-have-built-a-compiler/" type="text/html"/>
+		<id>https://rachitnigam.com/post/you-have-built-a-compiler/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Dear Sir,&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I am afraid to inform you that you have built a compiler.
+I know you wanted a “simple prototype” that would just add that
+one feature to your programming model.
+You said that “SSA is an overkill” and “it’s just way too much infrastructure
+to maintain for a simple task” and yet, six months later, you have pile of
+string mangling scripts that do not work—breaking every time a user input
+slightly deviates from things you’ve seen before.&lt;&#x2F;p&gt;
+&lt;p&gt;Surely, switching to the unstable abstract syntax tree (AST) library provided by the compiler will be the
+end of your woes; at least that way, someone else maintains a real parser and provides
+at least a semblance of sane input for you to transform.
+But wait, the AST is massive. “Do I really have to handle all 500 different AST nodes?” you ask yourself?
+Surely not.
+Your users aren’t crazy; they don’t use all the weird features of this language.
+So you march on, and handle the 50 AST nodes that matter, certain, that this
+will be the last of what you need to do to maintain this pile of hacks.&lt;&#x2F;p&gt;
+&lt;p&gt;Ah, but wait! Inevitably, someone wanted to nest a for loop inside a switch
+statement, a struct definition within that loop, and a conditional in
+expression position.
+Tired, you patch in support for each feature, distracting from the crucial
+features you should be working on and shipping.
+One of your brilliant team member suggests a pre-processing stage: de-nest all definitions,
+hoist all expressions, flatten out all control, and that way, you only have to handle
+50 AST nodes because you will &lt;em&gt;know&lt;&#x2F;em&gt;, yes &lt;em&gt;know&lt;&#x2F;em&gt;, that the program cannot have any other
+shape.&lt;&#x2F;p&gt;
+&lt;p&gt;Except once that engineer leave, who will &lt;em&gt;know&lt;&#x2F;em&gt; what assumptions you encoded?
+Those littered asserts? The inscrutable “unreachable code” errors? Who will &lt;em&gt;know&lt;&#x2F;em&gt;,
+how you simplified your AST?
+So you rolled out your own AST library, so that you may compile, nay, &lt;em&gt;transpile&lt;&#x2F;em&gt; your
+code and expose your assumptions in your data structures.&lt;span style=&quot;white-space:nowrap&quot;&gt;
+&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;&#x2F;span&gt;
+&lt;input type=&quot;checkbox&quot;
+       id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+&lt;span class=&quot;sidenote&quot;&gt;
+Certain, of course, that because you’re &lt;em&gt;transpiling&lt;&#x2F;em&gt; JavaScript to JavaScript, it is going to
+way easier than that real compilers do.
+&lt;&#x2F;span&gt;
+ What glorious engineering, you say to yourself.&lt;&#x2F;p&gt;
+&lt;p&gt;In the last leg of your journey to avoid building a compiler, your manager tells you
+that your code should run on older machines, which only support version 0.8 of your
+beautiful &lt;em&gt;transpiled&lt;&#x2F;em&gt; language.
+But what of your amazing and clever hacks that used type-level encodings to make your
+simple language feature work?
+Not my problem, your manager says.
+So at last, you write some code that simplifies your &lt;em&gt;transpiled&lt;&#x2F;em&gt; code further,
+so it may only use features in version 0.8.
+Done at last, you say to yourself, without having to build a compiler.&lt;&#x2F;p&gt;
+&lt;p&gt;A parser, an intermediate representation, transformation passes, and a code generator.
+Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Addressed to,&lt;&#x2F;em&gt;&lt;br&#x2F;&gt;
+&lt;em&gt;Those who did not want to build a compiler&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Personal Infrastructure for PhD Students</title>
 		<published>2022-01-09T00:00:00+00:00</published>
