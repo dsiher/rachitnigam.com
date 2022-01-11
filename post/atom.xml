@@ -51,17 +51,16 @@ code and expose your assumptions in your data structures.&lt;span style=&quot;wh
        class=&quot;margin-toggle&quot;&#x2F;&gt;
 &lt;span class=&quot;sidenote&quot;&gt;
 Certain, of course, that because you’re &lt;em&gt;transpiling&lt;&#x2F;em&gt; JavaScript to JavaScript, it is going to
-way easier than that real compilers do.
+way easier than what real compilers do.
 &lt;&#x2F;span&gt;
  What glorious engineering, you say to yourself.&lt;&#x2F;p&gt;
 &lt;p&gt;In the last leg of your journey to avoid building a compiler, your manager tells you
-that your code should run on older machines, which only support version 0.8 of your
-beautiful &lt;em&gt;transpiled&lt;&#x2F;em&gt; language.
-But what of your amazing and clever hacks that used type-level encodings to make your
-simple language feature work?
+that your code should run on older machines, which only support version 0.8.
+Version 0.8, of course, does not support the brilliant type-level encodings your
+transpiler generates to implement your feature.
 Not my problem, your manager says.
-So at last, you write some code that simplifies your &lt;em&gt;transpiled&lt;&#x2F;em&gt; code further,
-so it may only use features in version 0.8.
+So you write some code that simplifies your &lt;em&gt;transpiled&lt;&#x2F;em&gt; code further, making
+it use only features present in version 0.8.
 Done at last, you say to yourself, without having to build a compiler.&lt;&#x2F;p&gt;
 &lt;p&gt;A parser, an intermediate representation, transformation passes, and a code generator.
 Dear Sir, you have built a compiler.&lt;&#x2F;p&gt;
